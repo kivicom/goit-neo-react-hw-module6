@@ -1,4 +1,4 @@
-import ContactCard from '../ContactCard/ContactCard';
+import Contact from '../Contact/Contact';
 import style from './ContactList.module.css';
 import { useSelector } from 'react-redux';
 import { selectContacts } from '../../redux/contactsSlice';
@@ -16,7 +16,7 @@ const ContactList = () => {
         <ul className={style['contacts-list']}>
           {filteredContacts.map(({ id, name, number }) => (
             <li className={style['contact-item']} key={id}>
-              <ContactCard id={id} name={name} number={number} />
+              <Contact id={id} name={name} number={number} />
             </li>
           ))}
         </ul>

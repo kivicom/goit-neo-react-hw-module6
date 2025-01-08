@@ -1,9 +1,9 @@
 import { useDispatch } from 'react-redux';
 import { AiOutlinePhone, AiOutlineUser } from 'react-icons/ai';
-import style from './ContactCard.module.css';
+import style from './Contact.module.css';
 import { deleteContact } from '../../redux/contactsSlice';
 
-const ContactCard = ({ id, name, number }) => {
+const Contact = ({ id, name, number }) => {
   const dispatch = useDispatch();
 
   const handleDelete = () => {
@@ -29,4 +29,4 @@ const ContactCard = ({ id, name, number }) => {
   );
 };
 
-export default ContactCard;
+export default Contact;
